@@ -4,6 +4,7 @@ services:
         build: ./infra/php
         volumes:
         - ./backend:/work
+        mem_limit: 2g
     web:
         image: nginx:1.18-alpine
         ports:
